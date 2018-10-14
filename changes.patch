@@ -19,3 +19,11 @@ new file mode 100644
 +    true
 +  end
 +
++    return unless prompt('Perform cross-checks?')
++
++    puts 'Cross-checks performed!'
++    true
++  end
++end
+diff --git a/_mission.rb b/_mission.rb
+new file mode 100644
