@@ -19,6 +19,14 @@ new file mode 100644
 +    true
 +  end
 +
++  def engage_afterburner?
++    if prompt('Engage afterburner?')
++      puts 'Afterburner engaged!'
++
++      true
++    else
++      return false unless prompt('Retry?')
++
 +    return unless prompt('Perform cross-checks?')
 +
 +    puts 'Cross-checks performed!'
