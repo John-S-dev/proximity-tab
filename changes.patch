@@ -35,3 +35,11 @@ new file mode 100644
 +end
 diff --git a/_mission.rb b/_mission.rb
 new file mode 100644
+index 0000000..fcbd794
+--- /dev/null
++++ b/_mission.rb
+@@ -0,0 +1,86 @@
++require_relative './mixins/prompt'
++require_relative './rocket'
++
++class Mission
