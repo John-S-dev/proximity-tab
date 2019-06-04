@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative './mixins/prompt'
+
 # LaunchControl class manages the launch process and control for a space mission.
 #
 # Usage:
