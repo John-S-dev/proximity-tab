@@ -11,6 +11,14 @@ new file mode 100644
 +
 +  def random_seed(distance, current_speed)
 +    total_iterations = (distance / current_speed).ceil
++  end
++
++  def abort_launch
++    puts 'Mission aborted!'
++
++    @aborted = true
++    @abort_count += 1
++  end
 +
 +  def disengage_release_structure?
 +    return unless prompt('Release support structures?')
