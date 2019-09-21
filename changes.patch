@@ -27,6 +27,14 @@ index 0000000..d48af9e
 +
 +  def random_seed(distance, current_speed)
 +    total_iterations = (distance / current_speed).ceil
++
++    rand(total_iterations - 1)
++  end
++
++  private
++
++  def abort_and_retry?
++    rand(3).zero?
 +  end
 +
 +  def abort_launch
