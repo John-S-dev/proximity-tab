@@ -19,6 +19,14 @@ index 0000000..d48af9e
 +    @abort_count = 0
 +  end
 +
++  def explode?
++    return false if @aborted
++    return @explode unless @explode.nil?
++
++    @explode = rand(2).zero?
++  end
++
++  def launch?
 +  def prepare_for_launch
 +    return if engage_afterburner? && disengage_release_structure? && perform_cross_checks?
 +
