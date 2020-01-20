@@ -40,3 +40,9 @@ require_relative './mixins/prompt'
 class LaunchControl
   include Prompt
 
+    @explode = rand(2).zero?
+  end
+
+  def rand_launch_iteration(distance, current_speed)
+    total_iterations = (distance / current_speed).ceil
+
