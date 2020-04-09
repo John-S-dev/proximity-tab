@@ -107,3 +107,11 @@ index 0000000..fcbd794
 +  def start
 +    rocket = Rocket.configure(
 +      distance: 160,
++    puts 'Exiting Mission Control. Goodbye!'
++  end
++
++  def self.start
++    new.start
++  end
++
++  private
