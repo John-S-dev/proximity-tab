@@ -40,6 +40,11 @@ require_relative './mixins/prompt'
 class LaunchControl
   include Prompt
 
+  def launch?
+    return if @aborted
+    return unless prompt('Launch?')
+    return false if abort_and_retry? && abort_launch
+
     @explode = rand(2).zero?
   end
 
