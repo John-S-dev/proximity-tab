@@ -91,6 +91,14 @@ index 0000000..fcbd794
 +require_relative './rocket'
 +
 +class Mission
++  include Prompt
++
++  attr_reader :summary
++
++  def initialize
++    @summary = {
++      total_distance: 0.0,
++      no_abort_retries: 0,
 +    # }
 +  end
 +
