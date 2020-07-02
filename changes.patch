@@ -27,6 +27,14 @@ index 0000000..d48af9e
 +  end
 +
 +  def launch?
++    return if @aborted
++    return unless prompt('Launch?')
++    return false if abort_and_retry? && abort_launch
++
++    puts 'Launched!'
++    true
++  end
++
 +  def prepare_for_launch
 +    return if engage_afterburner? && disengage_release_structure? && perform_cross_checks?
 +
