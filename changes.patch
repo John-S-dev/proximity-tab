@@ -75,6 +75,14 @@ index 0000000..d48af9e
 +    else
 +      return false unless prompt('Retry?')
 +
++      puts 'Safe Abort!'
++
++      @abort_count += 1
++      engage_afterburner?
++    end
++  end
++
++  def perform_cross_checks?
 +    return unless prompt('Perform cross-checks?')
 +
 +    puts 'Cross-checks performed!'
@@ -99,6 +107,14 @@ index 0000000..fcbd794
 +    @summary = {
 +      total_distance: 0.0,
 +      no_abort_retries: 0,
++      no_explosions: 0,
++      total_fuel_burned: 0,
++      flight_time: 0.0
++    }
++
++    # @random_seed = random_seed
++    # @plan = {
++
 +    # }
 +  end
 +
