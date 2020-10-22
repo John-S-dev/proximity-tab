@@ -43,3 +43,5 @@ require_relative './mixins/prompt'
 class Mission
   include Prompt
 
+  attr_reader :summary
+
