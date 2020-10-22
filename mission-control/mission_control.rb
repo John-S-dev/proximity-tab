@@ -8,3 +8,7 @@
     new.start
   end
 
+    display_summary
+    puts 'Exiting Mission Control. Goodbye!'
+  end
+
