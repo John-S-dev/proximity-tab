@@ -139,6 +139,14 @@ index 0000000..fcbd794
 +  def start
 +    rocket = Rocket.configure(
 +      distance: 160,
++  def update_summary(**kwargs)
++    @summary = kwargs.slice(
++      :total_distance,
++      :no_abort_retries,
++      :no_explosions,
++      :total_fuel_burned,
++      :flight_time
++    )
 +    puts 'Exiting Mission Control. Goodbye!'
 +  end
 +
