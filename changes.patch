@@ -147,6 +147,14 @@ index 0000000..fcbd794
 +      :total_fuel_burned,
 +      :flight_time
 +    )
++require_relative './mixins/prompt'
++
++class MissionControl
++  include Prompt
++
++  def initialize
++    @missions = []
++  end
 +    puts 'Exiting Mission Control. Goodbye!'
 +  end
 +
