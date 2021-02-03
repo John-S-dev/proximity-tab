@@ -45,3 +45,8 @@ class Mission
 
   attr_reader :summary
 
+  def fetch_mission_name
+    print 'What is the name of this mission? '
+    @mission_name = gets.chomp
+  end
+
