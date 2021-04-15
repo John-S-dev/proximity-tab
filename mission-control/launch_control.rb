@@ -40,6 +40,13 @@ require_relative './mixins/prompt'
 class LaunchControl
   include Prompt
 
+  attr_reader :abort_count
+
+  def initialize
+    @aborted = false
+    @abort_count = 0
+  end
+
   def launch?
     return if @aborted
     return unless prompt('Launch?')
