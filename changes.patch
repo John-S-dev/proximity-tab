@@ -139,6 +139,14 @@ index 0000000..fcbd794
 +  def start
 +    rocket = Rocket.configure(
 +      distance: 160,
++    puts 'Mission status:'
++    puts "  Current fuel burn rate: #{kwargs[:current_fuel_burn_rate]} liters/min"
++    puts "  Current speed: #{kwargs[:current_speed]} km/h"
++    puts "  Current distance traveled: #{kwargs[:distance_traveled]} km"
++    puts "  Elapsed time: #{format_time(kwargs[:elapsed_time])}"
++    puts "  Time to destination: #{format_time(kwargs[:time_to_destination])}"
++  end
++
 +  def update_summary(**kwargs)
 +    @summary = kwargs.slice(
 +      :total_distance,
