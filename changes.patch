@@ -139,6 +139,14 @@ index 0000000..fcbd794
 +  def start
 +    rocket = Rocket.configure(
 +      distance: 160,
++      burn_rate: 168_240,
++      average_speed: 1500
++    )
++
++    if rocket.launch?
++      rocket.launch do |status|
++        display_mission_status(status)
++      end
 +    puts 'Mission status:'
 +    puts "  Current fuel burn rate: #{kwargs[:current_fuel_burn_rate]} liters/min"
 +    puts "  Current speed: #{kwargs[:current_speed]} km/h"
