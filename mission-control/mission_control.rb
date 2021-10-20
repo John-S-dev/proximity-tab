@@ -11,6 +11,13 @@ require_relative './mixins/prompt'
     new.start
   end
 
+  def start
+    puts 'Welcome to Mission Control!'
+
+    loop do
+      break unless run_mission
+    end
+
     display_summary
     puts 'Exiting Mission Control. Goodbye!'
   end
