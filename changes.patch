@@ -147,6 +147,14 @@ index 0000000..fcbd794
 +      rocket.launch do |status|
 +        display_mission_status(status)
 +      end
++    end
++
++    update_summary(rocket.summary)
++  end
++
++  private
++
++  def display_mission_status(**kwargs)
 +    puts 'Mission status:'
 +    puts "  Current fuel burn rate: #{kwargs[:current_fuel_burn_rate]} liters/min"
 +    puts "  Current speed: #{kwargs[:current_speed]} km/h"
