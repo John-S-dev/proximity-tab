@@ -171,6 +171,15 @@ index 0000000..fcbd794
 +      :total_fuel_burned,
 +      :flight_time
 +    )
++  end
++end
+diff --git a/_mission_control.rb b/_mission_control.rb
+new file mode 100644
+index 0000000..f863387
+--- /dev/null
++++ b/_mission_control.rb
+@@ -0,0 +1,74 @@
++require_relative './mission'
 +require_relative './mixins/prompt'
 +
 +class MissionControl
