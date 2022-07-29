@@ -58,3 +58,8 @@ class LaunchControl
   def rand_launch_iteration(distance, current_speed)
     total_iterations = (distance / current_speed).ceil
 
+    rand(total_iterations - 1)
+  end
+
+  private
+
