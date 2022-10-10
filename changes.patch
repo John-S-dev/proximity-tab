@@ -220,6 +220,14 @@ index 0000000..f863387
 +    total_abort_retries = @missions.sum { |mission| mission.summary[:no_abort_retries] }
 +    total_explosions = @missions.sum { |mission| mission.summary[:no_explosions] }
 +    total_fuel_burned = @missions.sum { |mission| mission.summary[:total_fuel_burned] }
++
++  def format_time(time)
++    hours = time / 3600
++    minutes = (time % 3600) / 60
++    seconds = time % 60
++
++    format('%02d:%02d:%02d', hours, minutes, seconds)
++  end
 +require_relative './launch_control'
 +
 +class Rocket
