@@ -44,3 +44,9 @@ class MissionControl
     puts 'Exiting Mission Control. Goodbye!'
   end
 
+    if mission.proceed?
+      mission.start
+
+      display_mission_summary(mission.summary)
+    end
+
