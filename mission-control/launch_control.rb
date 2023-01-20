@@ -63,3 +63,7 @@ class LaunchControl
 
   private
 
+  def abort_and_retry?
+    rand(3).zero?
+  end
+
