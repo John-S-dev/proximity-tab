@@ -44,6 +44,11 @@ class MissionControl
     puts 'Exiting Mission Control. Goodbye!'
   end
 
+  private
+
+  def run_mission
+    mission = Mission.new
+
     if mission.proceed?
       mission.start
 
