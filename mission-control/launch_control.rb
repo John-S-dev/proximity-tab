@@ -47,6 +47,12 @@ class LaunchControl
     @abort_count = 0
   end
 
+  def prepare_for_launch
+    return if engage_afterburner? && disengage_release_structure? && perform_cross_checks?
+
+    abort_launch
+  end
+
   def launch?
     return if @aborted
     return unless prompt('Launch?')
