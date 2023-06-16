@@ -260,3 +260,11 @@ index 0000000..f863387
 +  attr_reader :distance, :burn_rate,
 +              :average_speed, :distance_traveled, :elapsed_time
 +
++  end
++
++  def launch
++    @elapsed_time = 0
++    @distance_traveled = 0
++    @flight_time = Time.now
++
++    until reached_destination?
