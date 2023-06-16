@@ -44,3 +44,5 @@ class Rocket
   attr_reader :distance, :burn_rate,
               :average_speed, :distance_traveled, :elapsed_time
 
+    rocket.prepare_for_launch
+
