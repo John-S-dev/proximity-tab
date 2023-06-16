@@ -49,6 +49,9 @@ class MissionControl
   def run_mission
     mission = Mission.new
 
+    mission.print_plan
+    mission.fetch_mission_name
+
     if mission.proceed?
       mission.start
 
