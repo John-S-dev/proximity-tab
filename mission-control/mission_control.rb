@@ -58,3 +58,16 @@ class MissionControl
       display_mission_summary(mission.summary)
     end
 
+    @missions << mission
+    prompt('Would you like to run another mission?')
+  end
+
+  def display_mission_summary(summary)
+    puts 'Mission summary:'
+    puts "  Total distance traveled: #{summary[:total_distance].round(2)} km"
+    puts "  Number of abort and retries: #{summary[:no_abort_retries]}"
+    puts "  Number of explosions: #{summary[:no_explosions]}"
+    puts "  Total fuel burned: #{summary[:total_fuel_burned]} liters"
+    puts "  Flight time: #{format_time(summary[:flight_time])}"
+  end
+
