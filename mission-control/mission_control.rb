@@ -71,3 +71,15 @@ class MissionControl
     puts "  Flight time: #{format_time(summary[:flight_time])}"
   end
 
+    puts "  Total distance traveled (for all missions combined): #{total_distance.round(2)} km"
+    puts "  Number of abort and retries (for all missions combined): #{total_abort_retries}"
+    puts "  Number of explosions (for all missions combined): #{total_explosions}"
+    puts "  Total fuel burned (for all missions combined): #{total_fuel_burned} liters"
+    puts "  Total flight time (for all missions combined): #{format_time(total_flight_time)}"
+  end
+
+  def format_time(time)
+    hours = time / 3600
+    minutes = (time % 3600) / 60
+    seconds = time % 60
+
