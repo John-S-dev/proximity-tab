@@ -73,3 +73,10 @@ class LaunchControl
     rand(3).zero?
   end
 
+  def disengage_release_structure?
+    return unless prompt('Release support structures?')
+
+    puts 'Support structures released!'
+    true
+  end
+
