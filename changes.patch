@@ -284,3 +284,11 @@ index 0000000..f863387
 +      @elapsed_time += 1
 +      @distance_traveled += calculate_distance_traveled
 +
++    remaining_time = remaining_distance / average_speed
++
++    remaining_time.ceil
++  end
++
++  def calculate_distance_traveled
++    (current_speed * elapsed_time)
++  end
