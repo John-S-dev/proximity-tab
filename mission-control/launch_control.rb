@@ -58,6 +58,14 @@ class LaunchControl
     return unless prompt('Launch?')
     return false if abort_and_retry? && abort_launch
 
+    puts 'Launched!'
+    true
+  end
+
+  def explode?
+    return false if @aborted
+    return @explode unless @explode.nil?
+
     @explode = rand(2).zero?
   end
 
