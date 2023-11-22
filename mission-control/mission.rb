@@ -76,6 +76,10 @@ class Mission
     @mission_name = gets.chomp
   end
 
+  def proceed?
+    prompt('Would you like to proceed?')
+  end
+
   def start
     rocket = Rocket.prepare_for_launch(
       distance: 160, burn_rate: 168_240, average_speed: 1500
