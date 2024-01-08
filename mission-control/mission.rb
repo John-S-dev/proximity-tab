@@ -91,3 +91,6 @@ class Mission
       end
     end
 
+    @summary = rocket.summary
+  end
+
