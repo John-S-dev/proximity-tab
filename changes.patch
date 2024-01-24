@@ -294,6 +294,14 @@ index 0000000..f863387
 +    }
 +  end
 +
++  def explode_iteration
++    @explode_iteration || @launch_control.explode? && @launch_control.rand_explode_iteration(distance, current_speed)
++  end
++
++  def reached_destination?
++    distance_traveled >= distance
++  end
++
 +  def current_speed
 +    average_speed / 60
 +  end
