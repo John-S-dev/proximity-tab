@@ -270,6 +270,14 @@ index 0000000..f863387
 +
 +  end
 +
++  def self.configure(*args)
++    rocket = new(*args)
++
++    rocket.prepare_for_launch
++
++    rocket
++  end
++
 +  def launch
 +    @elapsed_time = 0
 +    @distance_traveled = 0
