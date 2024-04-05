@@ -26,6 +26,13 @@
 - 2023-08-06 09:36:17 UTC: fix: handle edge case
 - 2023-09-02 22:32:27 UTC: test: add unit tests
 - 2023-09-19 22:08:43 UTC: fix: correct typo
+- 2023-09-25 16:39:49 UTC: chore: initial project setup
+- 2023-10-30 00:15:25 UTC: chore: update dependencies
+- 2023-11-22 04:49:02 UTC: fix: handle edge case
+- 2023-12-24 08:41:10 UTC: build: update build configuration
+- 2023-12-29 19:44:22 UTC: docs: update README
+- 2024-01-02 13:18:47 UTC: refactor: simplify logic
+- 2024-01-03 22:35:20 UTC: chore: update dependencies
 - 2024-10-28 06:55:38 UTC: feat: add core functionality
 - 2024-11-29 21:11:47 UTC: chore: bump version
 - 2024-12-01 03:33:08 UTC: fix: resolve minor bug
