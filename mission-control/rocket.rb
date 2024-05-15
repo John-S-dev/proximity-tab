@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative './launch_control'
+
 # Rocket class represents a rocket used for space missions.
 #
 # Usage:
@@ -57,4 +59,7 @@ class Rocket
     rocket = new(distance, burn_rate, average_speed)
 
     rocket.prepare_for_launch
+
+    rocket
+  end
 
