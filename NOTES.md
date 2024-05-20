@@ -18,6 +18,14 @@
 - 2021-12-26 21:28:44 UTC: chore: update dependencies
 - 2022-01-17 15:33:21 UTC: build: update build configuration
 - 2022-02-09 08:23:21 UTC: fix: handle edge case
+- 2022-02-13 00:23:00 UTC: fix: patch minor issue
+- 2022-03-07 11:42:20 UTC: build: update build configuration
+- 2022-03-08 04:57:13 UTC: feat: extend functionality
+- 2022-05-21 20:34:52 UTC: fix: handle edge case
+- 2022-05-29 21:54:09 UTC: feat: add new feature
+- 2022-06-25 18:09:32 UTC: chore: bump version
+- 2022-06-27 15:58:10 UTC: docs: update README
+- 2022-09-14 17:44:32 UTC: chore: update dependencies
 - 2022-10-30 10:16:03 UTC: fix: patch minor issue
 - 2022-11-02 12:53:00 UTC: refactor: clean up code structure
 - 2022-12-12 00:20:52 UTC: build: update build configuration
