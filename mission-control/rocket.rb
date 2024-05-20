@@ -63,3 +63,11 @@ class Rocket
     rocket
   end
 
+  def prepare_for_launch
+    @launch_control.prepare_for_launch
+  end
+
+  def launch?
+    @launch_control.launch?
+  end
+
