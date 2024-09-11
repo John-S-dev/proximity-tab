@@ -88,3 +88,9 @@ class LaunchControl
     true
   end
 
+      true
+    else
+      return false unless prompt('Retry?')
+
+      puts 'Safe Abort!'
+
