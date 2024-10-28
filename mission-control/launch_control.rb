@@ -81,6 +81,13 @@ class LaunchControl
     rand(3).zero?
   end
 
+  def abort_launch
+    puts 'Mission aborted!'
+
+    @aborted = true
+    @abort_count += 1
+  end
+
   def disengage_release_structure?
     return unless prompt('Release support structures?')
 
