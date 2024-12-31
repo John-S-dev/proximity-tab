@@ -94,3 +94,5 @@ class Mission
     @summary = rocket.summary
   end
 
+  private
+
