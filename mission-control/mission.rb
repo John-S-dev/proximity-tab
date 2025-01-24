@@ -96,6 +96,15 @@ class Mission
 
   private
 
+  def display_mission_status(**status)
+    puts 'Mission status:'
+    puts "  Current fuel burn rate: #{status[:current_fuel_burn_rate]} liters/min"
+    puts "  Current speed: #{status[:current_speed]} km/h"
+    puts "  Current distance traveled: #{status[:distance_traveled]} km"
+    puts "  Elapsed time: #{format_time(status[:elapsed_time])}"
+    puts "  Time to destination: #{format_time(status[:time_to_destination])}"
+  end
+
   def format_time(time)
     hours = time / 3600
     minutes = (time % 3600) / 60
