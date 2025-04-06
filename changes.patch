@@ -260,6 +260,14 @@ index 0000000..f863387
 +
 +    format('%02d:%02d:%02d', hours, minutes, seconds)
 +  end
++end
+diff --git a/_rocket.rb b/_rocket.rb
+new file mode 100644
+index 0000000..fb67446
+--- /dev/null
++++ b/_rocket.rb
+@@ -0,0 +1,110 @@
++require_relative './mixins/prompt'
 +require_relative './launch_control'
 +
 +class Rocket
