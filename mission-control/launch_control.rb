@@ -95,6 +95,10 @@ class LaunchControl
     true
   end
 
+  def engage_afterburner?
+    if prompt('Engage afterburner?')
+      puts 'Afterburner engaged!'
+
       true
     else
       return false unless prompt('Retry?')
