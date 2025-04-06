@@ -76,6 +76,9 @@ class Rocket
     @distance_traveled = 0
     @flight_time = Time.now
 
+    until reached_destination?
+      break puts 'Exploded!' if explode_iteration == elapsed_time
+
   def summary
     {
       total_distance: distance_traveled,
@@ -84,5 +87,11 @@ class Rocket
       total_fuel_burned: calculate_total_fuel_burned,
       flight_time: flight_time
     }
+  end
+
+  private
+
+  def explode_iteration
+    @explode_iteration ||= @launch_control.explode? && @launch_control.rand_launch_iteration(distance, current_speed)
   end
 
