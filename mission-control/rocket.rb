@@ -95,6 +95,9 @@ class Rocket
     @explode_iteration ||= @launch_control.explode? && @launch_control.rand_launch_iteration(distance, current_speed)
   end
 
+  def flight_time
+    @flight_time ||= Time.now
+
   def status
     {
       elapsed_time: elapsed_time,
