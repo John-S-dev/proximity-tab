@@ -95,3 +95,17 @@ class Rocket
     @explode_iteration ||= @launch_control.explode? && @launch_control.rand_launch_iteration(distance, current_speed)
   end
 
+  def status
+    {
+      elapsed_time: elapsed_time,
+      distance_traveled: distance_traveled,
+      current_fuel_burn_rate: burn_rate / 60,
+      current_speed: average_speed,
+      time_to_destination: calculate_time_to_destination
+    }
+  end
+
+  def reached_destination?
+    distance_traveled >= distance
+  end
+
