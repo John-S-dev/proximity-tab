@@ -105,3 +105,11 @@ class LaunchControl
 
       puts 'Safe Abort!'
 
+      @abort_count += 1
+      engage_afterburner?
+    end
+  end
+
+  def perform_cross_checks?
+    return unless prompt('Perform cross-checks?')
+
