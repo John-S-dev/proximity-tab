@@ -294,6 +294,14 @@ index 0000000..fb67446
 +    rocket
 +  end
 +
++  def prepare_for_launch
++    @launch_control.prepare_for_launch
++  end
++
++  def launch?
++    @launch_control.launch?
++  end
++
 +  def launch
 +    @elapsed_time = 0
 +    @distance_traveled = 0
