@@ -124,3 +124,7 @@ class Rocket
     distance_traveled >= distance
   end
 
+  def current_speed
+    average_speed / 60
+  end
+
