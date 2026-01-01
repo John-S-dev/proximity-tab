@@ -65,3 +65,11 @@
 - 2025-08-08 08:34:04 UTC: fix: handle edge case
 - 2025-09-19 21:45:55 UTC: fix: patch minor issue
 - 2025-09-25 05:31:49 UTC: docs: add usage instructions
+- 2025-10-31 08:31:06 UTC: refactor: clean up code structure
+- 2025-11-05 01:24:32 UTC: test: add unit tests
+- 2025-12-15 19:19:43 UTC: fix: correct typo
+- 2025-12-16 19:35:18 UTC: refactor: simplify logic
+- 2025-12-17 13:57:38 UTC: style: format code
+- 2025-12-30 00:01:52 UTC: docs: update README
+- 2026-02-11 11:10:30 UTC: docs: add usage instructions
+- 2026-03-11 02:35:25 UTC: chore: bump version
