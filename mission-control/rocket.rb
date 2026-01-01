@@ -131,3 +131,7 @@ class Rocket
     average_speed / 60
   end
 
+  def calculate_total_fuel_burned
+    (burn_rate * elapsed_time) / 60
+  end
+end
