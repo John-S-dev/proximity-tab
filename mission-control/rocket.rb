@@ -110,6 +110,9 @@ class Rocket
   def flight_time
     @flight_time ||= Time.now
 
+    Time.now - @flight_time
+  end
+
   def status
     {
       elapsed_time: elapsed_time,
