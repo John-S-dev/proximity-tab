@@ -73,3 +73,7 @@
 - 2025-12-30 00:01:52 UTC: docs: update README
 - 2026-02-11 11:10:30 UTC: docs: add usage instructions
 - 2026-03-11 02:35:25 UTC: chore: bump version
+- 2026-03-15 00:51:56 UTC: fix: patch minor issue
+- 2026-05-29 04:34:22 UTC: feat: extend functionality
+- 2026-06-23 20:33:33 UTC: docs: update README
+- 2026-06-27 16:02:44 UTC: chore: tidy up project files
