@@ -131,6 +131,10 @@ class Rocket
     average_speed / 60
   end
 
+  def calculate_time_to_destination
+    remaining_distance = distance - distance_traveled
+    remaining_time = remaining_distance / average_speed
+
     remaining_time.ceil
   end
 
